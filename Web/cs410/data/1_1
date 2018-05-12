@@ -1,0 +1,115 @@
+{
+  "nodes": [
+    {
+      "id": "3",
+      "cluster": "1",
+      "title": "term4"
+      
+    },{
+      "id": "2",
+      "cluster": "1",
+      "title": "term5"
+     
+    },
+    {
+      "id": "4",
+      "cluster": "1",
+      "title": "term6"
+     
+    },
+    {
+      "id": "5",
+      "cluster": "1",
+      "title": "Aegean Sea"
+    
+    },
+    {
+      "id": "6",
+      "cluster": "1",
+      "title": "Alchemy"
+     
+    },
+    {
+      "id": "7",
+      "cluster": "1",
+      "title": "Anaximander" 
+    },
+    {
+      "id": "8",
+      "cluster": "1",
+      "title": "term3"
+     
+    },
+    {
+      "id": "9",
+      "cluster": "1",
+      "title": "term2"
+     
+    },
+    {
+      "id": "10",
+      "cluster": "1",
+      "title": "term1"
+     
+    } ,{
+      "id": "0",
+      "root": true,
+      "type": "philosopher",
+      "title": "DRUG_1_1_!_!_!sss"
+    },
+    {
+      "id": "1",
+      "root": true,
+      "type": "philosopher",
+      "title": "ADR"
+    }
+
+  ],
+  "edges":[{
+    "source": "0",
+    "target": "2",
+    "relatedness": "0.6416031476416721"
+  },
+    {
+      "source": "2",
+      "target": "1",
+      "relatedness": "0.6605042722871506"
+    },
+    {
+      "source": "5",
+      "target": "1",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "0",
+      "target": "8",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "8",
+      "target": "1",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "0",
+      "target": "9",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "9",
+      "target": "8",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "7",
+      "target": "1",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "2",
+      "target": "7",
+      "relatedness": "10"
+    }
+
+  ]
+}

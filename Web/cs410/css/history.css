@@ -1,0 +1,37 @@
+.history{
+    position: absolute;
+    width:20%;
+    height:50%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    top:0px;
+    left:80%;
+    background-color: deepskyblue;
+    z-index: 10;
+}
+
+#hisTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#hisTable td, #hisTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#hisTable a{
+    text-decoration: none;
+    color: dimgrey;
+}
+#hisTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#hisTable tr:hover {background-color: #ddd;}
+
+#hisTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkblue;
+    color: white;
+}

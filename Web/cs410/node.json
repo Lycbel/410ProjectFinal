@@ -1,0 +1,116 @@
+{
+  "nodes": [
+    {
+      "id": "3",
+      "cluster": "1",
+      "title": "A History of Western Philosophy",
+      "relatedness": "0.6416031476416721"
+    },{
+      "id": "2",
+      "cluster": "1",
+      "title": "A History of Western Philosophy",
+      "relatedness": "0.6416031476416721"
+    },
+    {
+      "id": "4",
+      "cluster": "1",
+      "title": "Abaris the Hyperborean",
+      "relatedness": "0.6605042722871506"
+    },
+    {
+      "id": "5",
+      "cluster": "1",
+      "title": "Aegean Sea",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "id": "6",
+      "cluster": "1",
+      "title": "Alchemy",
+      "relatedness": "0.6613786186196584"
+    },
+    {
+      "id": "7",
+      "cluster": "1",
+      "title": "Anaximander",
+      "relatedness": "0.7995214766975139"
+    },
+    {
+      "id": "8",
+      "cluster": "1",
+      "title": "Ancient Greece",
+      "relatedness": "0.6247677116583654"
+    },
+    {
+      "id": "9",
+      "cluster": "1",
+      "title": "Ancient Greek medicine",
+      "relatedness": "0.6484342496247335"
+    },
+    {
+      "id": "10",
+      "cluster": "1",
+      "title": "Ancient Greek philosophy",
+      "relatedness": "0.7615431029572908"
+    } ,{
+      "id": "0",
+      "root": true,
+      "type": "philosopher",
+      "title": "DRUG0"
+    },
+    {
+      "id": "1",
+      "root": true,
+      "type": "philosopher",
+      "title": "ADR"
+    }
+
+  ],
+  "edges":[{
+    "source": "0",
+    "target": "2",
+    "relatedness": "0.6416031476416721"
+  },
+    {
+      "source": "2",
+      "target": "1",
+      "relatedness": "0.6605042722871506"
+    },
+    {
+      "source": "5",
+      "target": "1",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "0",
+      "target": "8",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "8",
+      "target": "1",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "0",
+      "target": "9",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "9",
+      "target": "8",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "7",
+      "target": "1",
+      "relatedness": "0.5738613572915624"
+    },
+    {
+      "source": "2",
+      "target": "7",
+      "relatedness": "0.5738613572915624"
+    }
+
+  ]
+}

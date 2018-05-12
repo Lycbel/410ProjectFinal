@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link rel="stylesheet" href="0.4.1/alchemy.min.css"/>
+    <link rel="stylesheet" type="text/css" href="0.4.1/styles/vendor.css">
+</head>
+<body>
+<div class="alchemy" id="alchemy"></div>
+<script src="jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="0.4.1/scripts/vendor.js"></script>
+<script type="text/javascript" src="0.4.1/alchemy.min.js"></script>
+
+<script type="text/javascript">
+
+    var config = {
+        dataSource: "data/<?php echo($_REQUEST['fileName'])?>",
+        cluster: true,
+        clusterColours: ["#DD79FF", "#00FF30", "#5168FF", "#f83f00", "#ff8d8f"],
+        forceLocked: false,
+        nodeCaption: "title",
+        edgeCaption: "relatedness",
+        nodeCaptionsOnByDefault: true,
+        nodeTypes: {"type":["philosopher"]},
+        directedEdges:true,
+        nodeStyle: {
+            "philosopher": {
+                "radius": 30
+            }
+        },
+        initialScale: 0.9,
+        initialTranslate: [250,150]
+    }
+
+    alchemy = new Alchemy(config);
+
+
+</script>
+</body>
+</html>
