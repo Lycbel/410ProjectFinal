@@ -1,0 +1,53 @@
+# GO term= 47131
+# mesh heading desp 28939
+# mesh heading pac 6669
+# list = 129652
+# paper ~1600w
+
+# before process
+# drug = 231092 ## 药名不统一(差一个字母之类)
+# adr = 17281
+# drug_adr pair  8341780 834万
+
+# after process (分drug: >= bottom 5% and > 1)
+# drug = 63707 ## 药名不统一(差一个字母之类)
+# adr = 13544
+# drug_adr pair  3507300 350万
+# active Substance 6479
+
+mingo:
+dict: key:doc_id value: [drug 2w,adr 1w,active ,term:8w]
+
+andy:
+given a matrix, create a plot (find an app)
+
+jack:
+
+have:
+a go dict: key: GO id value： Go_term
+a doc dict: key:doc value:[term]
+a active dict: key drug value [active]
+
+
+0. create a word dictionary key: word value:index
+* create a list for all actives
+result = [] for key in active.keys() result.extend(active[key]); result = set(result)
+* go id -> go term share the same index
+* inner node(term) index 排在最前
+* drug, adr, active
+
+1. function: trans: dict -> sparse matrix
+i) initial a sparse matrix
+ii) for i in doc.keys():
+       doc[i] - list *** list转成set
+       set 中的node 两两在matrix中加1 (find index in word dictionary)
+iii) pickle.pump 存成本地文件
+
+2 function： input: sparse matrix, drug, adr
+i) according to active dict find a list of active  drug->[index1, index2,...] 
+ii) 提取矩阵 dim = (inner node(term) index + drug index + active index + adr index) 见图
+iii) BFS(path length < 7) 如果不存在小于7的path，return 最短路径
+     return a matrix, 以及matrix的解释(list:每一行对应的node的index)
+
+
+   
